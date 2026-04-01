@@ -19,7 +19,7 @@ if (weight <= 0 || weight > 20){
         cout << "distance wrong" << endl;
     }
     else {
-        if (weigth <= 2){rate = rate1;}
+        if (weight <= 2){rate = rate1;}
         else if (weight <= 6){rate = rate2;}
         else if (weight <= 10){rate = rate3;}
         else {rate = rate4;}
