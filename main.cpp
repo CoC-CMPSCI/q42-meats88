@@ -35,4 +35,4 @@ if (weight <= 0 || weight > 20){
     cout << total_charge << endl;
 
     return 0;
-}
+}}
