@@ -13,7 +13,15 @@ int main()
 
     cout << "Enter the package weight and distance: ";
     cin >> weight >> distance;
-
+if (weight <= 0 || weight > 20){
+    cout << "weight wrong" << endl;
+    else if (distance < 10 || distance > 3000){
+        cout << distance wrong << endl;
+    }
+    else {
+        if (weigth <= 2){rate = rate1;}
+        else if (weight <= 6){rate =}
+    
     // TODO
 
     cout << setw(10) << left << setprecision(2) << fixed;
