@@ -14,16 +14,19 @@ int main()
     cout << "Enter the package weight and distance: ";
     cin >> weight >> distance;
 if (weight <= 0 || weight > 20){
-    cout << "weight wrong" << endl;}
+    cout << "weight invalid wrong" << endl;}
     else if (distance < 10 || distance > 3000){
-        cout << "distance wrong" << endl;
+        cout << "distance invalid wrong" << endl;
     }
     else {
         if (weight <= 2){rate = rate1;}
         else if (weight <= 6){rate = rate2;}
         else if (weight <= 10){rate = rate3;}
         else {rate = rate4;}
-    total_charge = (distance / 500) * rate;
+    if (distance < 500){
+        total_charge = rate;
+    }else{
+        total_charge = (distance / 500) * rate;
     }
     
     // TODO
